@@ -1,4 +1,5 @@
 import { Shield, BookOpen } from 'lucide-react'
+import Resumen from './components/Resumen'
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
             Este sitio contiene el informe de auditoría de seguridad del portal web de clientes de FarmaSalud. Las secciones se incorporarán como componentes individuales en el menú superior.
           </p>
         </div>
+
+        <Resumen />
+        
       </main>
 
       <footer className="bg-slate-100 text-slate-600 text-sm py-4 px-6">
