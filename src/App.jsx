@@ -4,6 +4,7 @@ import InyeccionSQL from './components/InyeccionSQL'
 import XSS from './components/XSS'
 import Comandos from './components/Comandos'
 
+
 function App() {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">

@@ -51,7 +51,7 @@ function Comandos() {
             Defensa y Prevención
           </h3>
           <p className="mt-2 text-emerald-900">
-            La regla de oro es no transferir nunca la entrada del usuario directamente al sistema operativo. La defensa requiere emplear <strong>listas blancas</strong> (ej. aceptar formatos de IP válidos) y utilizar APIs seguras nativas del lenguaje de programación que no invoquen la terminal.
+            La regla de oro es no transferir nunca la entrada del usuario directamente al sistema operativo. La defensa requiere emplear <strong>listas blancas</strong> (como por ej. aceptar estrictamente formatos de IP válidos) y utilizar APIs seguras nativas del lenguaje de programación que no invoquen la terminal.
           </p>
         </div>
       </div>
