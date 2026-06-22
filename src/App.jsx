@@ -1,6 +1,7 @@
 import { Shield, BookOpen } from 'lucide-react'
 import Resumen from './components/Resumen'
 import InyeccionSQL from './components/InyeccionSQL'
+import XSS from './components/XSS'
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
 
         <Resumen />
         <InyeccionSQL />
-
+        <XSS />
       </main>
 
       <footer className="bg-slate-100 text-slate-600 text-sm py-4 px-6">
