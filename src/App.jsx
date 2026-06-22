@@ -23,18 +23,7 @@ function App() {
       </header>
 
       <main className="flex-1 max-w-4xl mx-auto px-6 py-12 w-full">
-        <div className="bg-white rounded-lg shadow p-8">
-          <div className="flex items-center gap-3 mb-4">
-            <BookOpen className="text-slate-700" />
-            <h2 className="text-xl font-semibold text-slate-800">
-              Bienvenida
-            </h2>
-          </div>
-          <p className="text-slate-600 leading-relaxed">
-            Este sitio contiene el informe de auditoría de seguridad del portal web de clientes de FarmaSalud. Las secciones se incorporarán como componentes individuales en el menú superior.
-          </p>
-        </div>
-
+        
         <Resumen />
         <InyeccionSQL />
         <XSS />
