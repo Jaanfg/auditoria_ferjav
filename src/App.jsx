@@ -3,6 +3,7 @@ import Resumen from './components/Resumen'
 import InyeccionSQL from './components/InyeccionSQL'
 import XSS from './components/XSS'
 import Comandos from './components/Comandos'
+import Prompts from './components/Prompts'
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <InyeccionSQL />
         <XSS />
         <Comandos />
+        <Prompts />
       </main>
 
       <footer className="bg-slate-100 text-slate-600 text-sm py-4 px-6">

@@ -1,0 +1,7 @@
+# Bitácora de Uso de IA
+
+## 1. Uso de la Calculadora CVSS 3.1
+* **Herramienta:** Google Gemini.
+* **Prompt utilizado:** "Actúa como auditor experto. Necesito evaluar el nivel de riesgo de Inyección SQL, XSS Reflejado e Inyección de Comandos usando la calculadora oficial: https://www.first.org/cvss/calculator/3.1. Indícame qué métricas debo seleccionar para cada ataque. Justifica cada elección considerando el contexto de FarmaSalud, una plataforma que almacena recetas médicas y datos de salud para determinar el impacto real en confidencialidad, integridad y disponibilidad."
+* **Qué se aceptó y qué se corrigió:** Se aceptaron las justificaciones teóricas sobre cómo Inyección de Comandos afecta totalmente la disponibilidad e integridad del servidor. Sin embargo, se debió corregir manualmente la métrica de "Privileges Required" en algunos ataques ya que la IA asumió por error un ataque autenticado. Al estar el entorno DVWA configurado en nivel Low, el ataque se realizó sin validaciones previas por lo que se ajustó a "None" en la calculadora real.
+* **Reflexión Final:** Usar la IA para entender los vectores de la calculadora CVSS fue clave para no asignar puntajes al azar. La IA desglosó qué significa cada sigla del vector generado pero demostró que puede equivocarse al asumir las condiciones del entorno si no se le detalla exactamente cómo se ejecutó el ataque en el laboratorio.
