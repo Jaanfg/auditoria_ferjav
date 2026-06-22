@@ -3,8 +3,11 @@ import Resumen from './components/Resumen'
 import InyeccionSQL from './components/InyeccionSQL'
 import XSS from './components/XSS'
 import Comandos from './components/Comandos'
-import Prompts from './components/Prompts'
+import Activos from './components/Activos'
+import Matriz from './components/Matriz'
 
+
+import Prompts from './components/Prompts'
 
 function App() {
   return (
@@ -29,6 +32,10 @@ function App() {
         <InyeccionSQL />
         <XSS />
         <Comandos />
+        <Activos />
+        <Matriz />
+
+
         <Prompts />
       </main>
 
