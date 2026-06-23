@@ -1,4 +1,4 @@
-import { Bot, Calculator, CheckCircle } from 'lucide-react'
+import { Bot, Calculator, CheckCircle, Layout, TerminalSquare } from 'lucide-react'
 
 function Prompts() {
   return (
@@ -58,6 +58,32 @@ function Prompts() {
               <p className="text-sm">
                 <strong className="text-slate-800 block mb-1">Qué se aceptó y qué se corrigió:</strong> 
                 Se aceptaron la maquetación y las clases de color. Se corrigió manualmente la ubicación de las vulnerabilidades en las celdas ya que la IA las ubicó al azar y no respetaba el análisis del negocio.
+              </p>
+            </div>
+          </div>
+        </div>
+
+<div className="bg-slate-50 p-5 rounded-lg border border-slate-200">
+          <h3 className="font-semibold text-slate-800 flex items-center gap-2 mb-4">
+            <TerminalSquare className="text-purple-500" size={20} />
+            3. Resolución de ReferenceError
+          </h3>
+          
+          <div className="space-y-4">
+            <div>
+              <span className="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded font-semibold mb-3 border border-purple-200">
+                Herramienta: Google Gemini
+              </span>
+              <p className="text-sm">
+                <strong className="text-slate-800 block mb-1">Prompt utilizado:</strong> 
+                "Tengo una pantalla en blanco en mi aplicación React. En la consola del navegador me sale el error: 'Uncaught ReferenceError: Layout is not defined' en el archivo Prompts.jsx. ¿Cómo lo soluciono?"
+              </p>
+            </div>
+            
+            <div className="border-t border-slate-200 pt-4">
+              <p className="text-sm">
+                <strong className="text-slate-800 block mb-1">Qué se aceptó y qué se corrigió:</strong> 
+                Se aceptó el diagnóstico de la IA que identificó que el componente intentaba renderizar la etiqueta del ícono sin haberla importado previamente. Se solucionó añadiendo el elemento 'Layout' dentro del import de lucide-react en la línea 1.
               </p>
             </div>
           </div>
