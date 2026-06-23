@@ -5,7 +5,7 @@ import XSS from './components/XSS'
 import Comandos from './components/Comandos'
 import Activos from './components/Activos'
 import Matriz from './components/Matriz'
-
+import Controles from './components/Controles'
 
 import Prompts from './components/Prompts'
 
@@ -34,7 +34,7 @@ function App() {
         <Comandos />
         <Activos />
         <Matriz />
-
+        <Controles />
 
         <Prompts />
       </main>
