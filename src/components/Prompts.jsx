@@ -37,6 +37,32 @@ function Prompts() {
           </div>
         </div>
 
+        <div className="bg-slate-50 p-5 rounded-lg border border-slate-200">
+          <h3 className="font-semibold text-slate-800 flex items-center gap-2 mb-4">
+            <Layout className="text-purple-500" size={20} />
+            2. Asistencia en Interfaz
+          </h3>
+          
+          <div className="space-y-4">
+            <div>
+              <span className="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded font-semibold mb-3 border border-purple-200">
+                Herramienta: Google Gemini
+              </span>
+              <p className="text-sm">
+                <strong className="text-slate-800 block mb-1">Prompt utilizado:</strong> 
+                "Tengo que presentar la Matriz de Riesgo en una app React. Escribe la estructura de un componente usando Tailwind CSS que dibuje una tabla tipo 'Mapa de Calor' usando colores de fondo verde, amarillo, naranja y rojo para cruzar probabilidad e impacto."
+              </p>
+            </div>
+            
+            <div className="border-t border-slate-200 pt-4">
+              <p className="text-sm">
+                <strong className="text-slate-800 block mb-1">Qué se aceptó y qué se corrigió:</strong> 
+                Se aceptaron la maquetación y las clases de color. Se corrigió manualmente la ubicación de las vulnerabilidades en las celdas ya que la IA las ubicó al azar y no respetaba el análisis del negocio.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="bg-purple-50 p-5 rounded-lg border border-purple-200">
           <h3 className="font-semibold text-purple-900 flex items-center gap-2 mb-2">
             <CheckCircle className="text-purple-600" size={20} />
