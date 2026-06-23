@@ -1,4 +1,4 @@
-import { Shield, BookOpen } from 'lucide-react'
+import { ShieldPlus, BookOpen } from 'lucide-react'
 import Resumen from './components/Resumen'
 import InyeccionSQL from './components/InyeccionSQL'
 import XSS from './components/XSS'
@@ -6,7 +6,7 @@ import Comandos from './components/Comandos'
 import Activos from './components/Activos'
 import Matriz from './components/Matriz'
 import Controles from './components/Controles'
-
+import Recuperacion from './components/Recuperacion'
 import Prompts from './components/Prompts'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <div className="min-h-screen bg-slate-50 flex flex-col">
       <header className="bg-slate-900 text-white py-10 px-6 shadow">
         <div className="max-w-4xl mx-auto flex items-center gap-4">
-          <Shield size={40} className="text-red-400" />
+          <ShieldPlus size={40} className="text-red-500" />
           <div>
             <h1 className="text-3xl font-bold">
               Auditoría de Seguridad - FarmaSalud
@@ -35,7 +35,7 @@ function App() {
         <Activos />
         <Matriz />
         <Controles />
-
+        <Recuperacion />
         <Prompts />
       </main>
 

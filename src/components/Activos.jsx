@@ -1,4 +1,4 @@
-import { Database, Users, Gift, AlertOctagon } from 'lucide-react'
+import { Database, Users, Gift, AlertOctagon, Key, CreditCard } from 'lucide-react'
 
 function Activos() {
   return (
@@ -41,6 +41,25 @@ function Activos() {
             </div>
             <p className="text-sm"><strong>Descripción:</strong> El servidor web y los registros de clientes (Rut, nombres, direcciones de despacho).</p>
             <p className="text-sm mt-2 text-red-600"><strong>Riesgo Principal:</strong> Compromiso total del servidor mediante Inyección de Comandos permitiendo inyectar ransomware y paralizar el servicio.</p>
+          </div>
+
+          <div className="bg-slate-50 p-5 rounded-lg border border-slate-200">
+            <div className="flex items-center gap-2 mb-2">
+              <Key className="text-amber-500" size={20} />
+              <h3 className="font-semibold text-slate-800">4. Credenciales de Acceso</h3>
+            </div>
+            <p className="text-sm"><strong>Descripción:</strong> Usuarios y contraseñas de clientes y administradores.</p>
+            <p className="text-sm mt-2 text-red-600"><strong>Riesgo Principal:</strong> Filtración de datos.</p>
+          </div>
+
+          <div className="bg-slate-50 p-5 rounded-lg border border-slate-200 md:col-span-2">
+            <div className="flex items-center gap-2 mb-2">
+              <CreditCard className="text-purple-500" size={20} />
+              <h3 className="font-semibold text-slate-800">5. Plataforma de Pagos</h3>
+            </div>
+            <p className="text-sm"><strong>Descripción:</strong> Módulo de transacciones online para compra de medicamentos.</p>
+            <p className="text-sm mt-2 text-red-600"><strong>Riesgo Principal:</strong> Interrupción operativa por caída del servidor.</p>
+
           </div>
         </div>
       </div>

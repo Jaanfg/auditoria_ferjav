@@ -13,3 +13,11 @@ En base a la industria de FarmaSalud, el diseño de la base de datos y la arquit
 ## 3. Infraestructura y Datos Personales
 * **Descripción:** El servidor web y los registros de clientes (Rut, nombres, direcciones).
 * **Riesgo:** Compromiso total del servidor mediante Inyección de Comandos.
+
+## 4. Credenciales de Acceso
+* **Descripción:** Usuarios y contraseñas de los clientes y administradores del portal.
+**Riesgo:** Filtración derivada de una brecha por Inyección SQL.
+
+## 5. Plataforma de Transacciones y Pagos
+* **Descripción:** Módulo de cotización y derivación a pasarelas de pago para venta online de medicamentos.
+* **Riesgo:** Interrupción del flujo de caja si el servidor es derribado.
