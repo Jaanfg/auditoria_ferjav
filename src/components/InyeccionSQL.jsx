@@ -54,6 +54,17 @@ function InyeccionSQL() {
             La mitigación principal consiste en implementar <strong>consultas parametrizadas</strong>. Esto garantiza que la base de datos reciba primero la instrucción y luego el dato tratándolo siempre como un valor literal y nunca como código.
           </p>
         </div>
+
+        <div className="bg-blue-50 p-5 rounded-lg border border-blue-200 mt-4">
+          <h3 className="text-lg font-semibold text-blue-800 flex items-center gap-2 mb-2">
+            <ShieldCheck className="text-blue-600" size={20} />
+            Control de Mitigación (OWASP)
+          </h3>
+          <p className="text-blue-900 text-sm">
+            Siguiendo las directrices de <strong>OWASP</strong>, se debe aplicar el principio de menor privilegio. La aplicación web debe conectarse con una cuenta restringida que no tenga permisos para modificar la estructura de las tablas limitando el impacto de una inyección exitosa.
+            </p>
+        </div>
+
       </div>
     </div>
   )

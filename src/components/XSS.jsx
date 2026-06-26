@@ -54,6 +54,17 @@ function XSS() {
             La prevención clave es <strong>escapar la salida</strong>, convirtiendo caracteres especiales (como <code>&lt;</code> en <code>&amp;lt;</code>) para que el navegador los renderice como texto visual y no como código ejecutable. Además, se debe implementar una política estricta de Content Security Policy (CSP).
           </p>
         </div>
+
+        <div className="bg-blue-50 p-5 rounded-lg border border-blue-200 mt-4">
+          <h3 className="text-lg font-semibold text-blue-800 flex items-center gap-2 mb-2">
+            <ShieldCheck className="text-blue-600" size={20} />
+            Control de Mitigación (OWASP)
+          </h3>
+          <p className="text-blue-900 text-sm">
+            Acorde al marco de referencia <strong>OWASP</strong>, se debe configurar una estricta política de CSP en las cabeceras HTTP del servidor. Esto mitigará el ataque bloqueando la ejecución de cualquier script que no provenga de una fuente autorizada.
+            </p>
+        </div>
+
       </div>
     </div>
   )
