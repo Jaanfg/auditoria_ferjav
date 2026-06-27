@@ -18,7 +18,13 @@ function Resumen() {
           Este portal web es una plataforma crítica para la organización ya que permite a los clientes acceder a servicios personalizados y gestionar información altamente sensible.
         </p>
 
-        <h3 className="text-lg font-semibold text-slate-800 mt-6 mb-2">Activos de Información Custodiados:</h3>
+        <div className="bg-slate-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-4">
+          <p className="text-sm text-slate-700">
+            Durante la evaluación se identificaron tres vulnerabilidades de severidad crítica y alta (Inyección SQL, Inyección de Comandos y XSS Reflejado) que comprometen la confidencialidad de los historiales médicos y la disponibilidad de la plataforma de ventas. En respuesta a eso, este documento presenta una priorización de riesgos basada en su impacto y puntaje CVSS, propone controles técnicos sustentados en los marcos <strong>OWASP y NIST</strong> y establece un plan de recuperación y mejoras para garantizar la continuidad del portal.
+         </p>
+        </div>
+
+        <h3 className="text-lg font-semibold text-slate-800 mt-6 mb-2">Activos de Información Críticos:</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
           <div className="bg-slate-50 p-4 rounded-lg border border-slate-200 flex flex-col items-center text-center">
             <Activity className="text-emerald-500 mb-2" />

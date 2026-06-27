@@ -91,12 +91,17 @@ function Matriz() {
           <ul className="space-y-3 text-sm">
             <li className="flex gap-2">
               <span className="bg-red-600 text-white font-bold px-2 rounded h-fit">Nivel 9</span>
-              <p><strong>Inyección de Comandos e Inyección SQL:</strong> Ambas presentan una Probabilidad Alta (3) al ser fácilmente explotables sin autenticación previa y un Impacto Alto (3) ya que permiten el compromiso total de la base de datos de pacientes y el control absoluto del servidor de FarmaSalud. Son de resolución crítica e inmediata.</p>
-
+              <p>
+                <strong>Inyección de Comandos e Inyección SQL:</strong> Ambas presentan una Probabilidad Alta (3) al ser fácilmente explotables sin autenticación previa y un Impacto Alto (3) ya que permiten el compromiso total de la base de datos de pacientes y el control absoluto del servidor de FarmaSalud. Son de resolución crítica e inmediata.
+                <span className="block mt-2 text-indigo-700"><strong>Justificación:</strong> El impacto es máximo porque expone el activo más crítico de FarmaSalud, que incluye historiales médicos, recetas de enfermedades crónicas y datos personales de pacientes, lo que derivaría en duras demandas legales. Lo cual es completamente coherente con sus altos puntajes técnicos CVSS de 9.8 y 7.5 respectivamente.</span>
+              </p>
             </li>
             <li className="flex gap-2">
               <span className="bg-orange-500 text-white font-bold px-2 rounded h-fit">Nivel 6</span>
-              <p><strong>XSS Reflejado:</strong> Presenta una Probabilidad Alta (3) por la falta de sanitización en las entradas del portal web pero un Impacto Medio (2) ya que el ataque requiere engañar al usuario para robar su sesión limitando el daño a usuarios individuales y no a la infraestructura completa.</p>
+              <p>
+                <strong>XSS Reflejado:</strong> Presenta una Probabilidad Alta (3) por la falta de sanitización en las entradas del portal web pero un Impacto Medio (2) ya que el ataque requiere engañar al usuario para robar su sesión limitando el daño a usuarios individuales y no a la infraestructura completa.
+                <span className="block mt-2 text-indigo-700"><strong>Justificación:</strong> Permite el secuestro total del servidor paralizando por completo la pasarela de pagos y la operatividad de venta de medicamentos. Este riesgo de nivel medio se alinea perfectamente con su puntaje técnico CVSS de 6.1.</span>
+              </p>
             </li>
           </ul>
         </div>
@@ -107,9 +112,3 @@ function Matriz() {
 }
 
 export default Matriz
-
-
-
-
-
-            

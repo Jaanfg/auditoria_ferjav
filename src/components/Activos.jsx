@@ -22,6 +22,7 @@ function Activos() {
               <h3 className="font-semibold text-slate-800">1. Base de Datos de Salud y Recetas</h3>
             </div>
             <p className="text-sm"><strong>Descripción:</strong> Tablas relacionales que contienen el historial médico de los pacientes, recetas médicas retenidas y tratamientos crónicos.</p>
+            <p className="text-sm mt-1 text-blue-700"><strong>Clasificación:</strong> Confidencial / Crítico</p>
             <p className="text-sm mt-2 text-red-600"><strong>Riesgo Principal:</strong> Extracción no autorizada mediante Inyección SQL exponiendo información médica sensible y violación de la privacidad.</p>
           </div>
 
@@ -31,6 +32,7 @@ function Activos() {
               <h3 className="font-semibold text-slate-800">2. Sistema de Fidelización</h3>
             </div>
             <p className="text-sm"><strong>Descripción:</strong> Plataforma que administra los descuentos y beneficios asociados al Rut del cliente.</p>
+            <p className="text-sm mt-1 text-blue-700"><strong>Clasificación:</strong> Uso Interno / Alto Valor</p>
             <p className="text-sm mt-2 text-red-600"><strong>Riesgo Principal:</strong> Robo de tokens de sesión mediante XSS para canjear beneficios de forma fraudulenta.</p>
           </div>
 
@@ -40,6 +42,7 @@ function Activos() {
               <h3 className="font-semibold text-slate-800">3. Infraestructura y Datos Personales</h3>
             </div>
             <p className="text-sm"><strong>Descripción:</strong> El servidor web y los registros de clientes (Rut, nombres, direcciones de despacho).</p>
+            <p className="text-sm mt-1 text-blue-700"><strong>Clasificación:</strong> Confidencial / Crítico</p>
             <p className="text-sm mt-2 text-red-600"><strong>Riesgo Principal:</strong> Compromiso total del servidor mediante Inyección de Comandos permitiendo inyectar ransomware y paralizar el servicio.</p>
           </div>
 
@@ -49,6 +52,7 @@ function Activos() {
               <h3 className="font-semibold text-slate-800">4. Credenciales de Acceso</h3>
             </div>
             <p className="text-sm"><strong>Descripción:</strong> Usuarios y contraseñas de clientes y administradores.</p>
+            <p className="text-sm mt-1 text-blue-700"><strong>Clasificación:</strong> Estrictamente Confidencial</p>
             <p className="text-sm mt-2 text-red-600"><strong>Riesgo Principal:</strong> Filtración de datos.</p>
           </div>
 
@@ -58,6 +62,7 @@ function Activos() {
               <h3 className="font-semibold text-slate-800">5. Plataforma de Pagos</h3>
             </div>
             <p className="text-sm"><strong>Descripción:</strong> Módulo de transacciones online para compra de medicamentos.</p>
+            <p className="text-sm mt-1 text-blue-700"><strong>Clasificación:</strong> Operacional / Financiero</p>
             <p className="text-sm mt-2 text-red-600"><strong>Riesgo Principal:</strong> Interrupción operativa por caída del servidor.</p>
 
           </div>

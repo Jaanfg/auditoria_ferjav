@@ -23,12 +23,16 @@ function Recuperacion() {
             </h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <strong className="text-slate-700 block">Despliegue de WAF:</strong> 
-                Instalación de un Web Application Firewall para interceptar de manera proactiva cargas útiles maliciosas antes de que lleguen al código de la aplicación.
+                <strong className="text-slate-700 block">Implementación de WAF:</strong> 
+                Desplegar un Web Application Firewall para filtrar tráfico malicioso y detectar patrones de Inyección SQL y XSS antes de que alcancen el portal de clientes.
               </li>
               <li>
-                <strong className="text-slate-700 block">Monitoreo de Base de Datos:</strong> 
-                Implementar un sistema de alertas en tiempo real sobre las tablas que almacenan información de salud y puntos de clientes.
+                <strong className="text-slate-700 block">Auditoría de Base de Datos:</strong> 
+                Implementar un monitoreo activo sobre las tablas de recetas médicas y fidelización para detectar extracciones anómalas de información.
+              </li>
+          <li>
+                <strong className="text-slate-700 block">Segmentación de Red:</strong> 
+                Aislar el servidor web de la base de datos principal en redes virtuales distintas para contener el movimiento en caso de que un atacante logre una inyección de comandos.
               </li>
             </ul>
           </div>
@@ -40,12 +44,20 @@ function Recuperacion() {
             </h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <strong className="text-slate-700 block">Respaldos Críticos (Backups):</strong> 
-                Copias de seguridad cifradas de las recetas médicas, almacenadas fuera de la red principal de la farmacia.
+                <strong className="text-slate-700 block">Recuperación de Datos de Salud:</strong> 
+                Ejecutar backups diarios y semanales de la base de datos. Estos respaldos deben almacenarse en una ubicación externa y de forma cifrada.
               </li>
               <li>
                 <strong className="text-slate-700 block">Alta Disponibilidad:</strong> 
-                Arquitectura en la nube para levantar réplicas del servidor web en minutos si el servidor original sufre una inyección de comandos o ransomware.
+                Establecer una infraestructura en la nube que permita levantar servidores de contingencia rápidamente asegurando que la venta de medicamentos y el acceso a las recetas no se interrumpan en caso de compromiso del servidor principal.
+              </li>
+              <li>
+                <strong className="text-slate-700 block">Procedimiento de Restauración:</strong> 
+                Realizar simulacros y pruebas mensuales de restauración de los respaldos para garantizar que el tiempo objetivo de recuperación cumpla con los estándares de la industria.
+              </li>
+            <li>
+                <strong className="text-slate-700 block">Plan de Notificación:</strong> 
+                Establecer un protocolo formal de comunicación para alertar inmediatamente al equipo de respuesta, autoridades y a los pacientes afectados en caso de confirmarse una brecha de datos.
               </li>
             </ul>
           </div>
@@ -55,4 +67,4 @@ function Recuperacion() {
   )
 }
 
-export default Recuperacion    
+export default Recuperacion

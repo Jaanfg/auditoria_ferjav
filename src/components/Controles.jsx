@@ -21,6 +21,9 @@ function Controles() {
               <FileCheck className="text-emerald-600" size={20} />
               1. Políticas de Prevención
             </h3>
+
+            <p className="text-xs font-bold text-emerald-700 mb-4 ml-7 uppercase tracking-wider">Aplica a los riesgos priorizados</p>
+
             <ul className="space-y-3 text-sm text-emerald-800 list-disc list-inside marker:text-emerald-500">
               <li><strong>Desarrollo Seguro:</strong> Implementar capacitaciones en OWASP para el equipo de desarrollo del portal.</li>
               <li><strong>Privacidad de Datos:</strong> Cifrar información clínica, recetas médicas y credenciales de pacientes ya sea que los datos estén siendo transferidos (HTTPS) o almacenados.</li>
@@ -33,10 +36,22 @@ function Controles() {
               <Wrench className="text-teal-600" size={20} />
               2. Controles de Mitigación
             </h3>
+            
+            <p className="text-xs font-bold text-teal-700 mb-4 ml-7 uppercase tracking-wider">Para riesgos Rojos / Naranjos</p>
+
             <ul className="space-y-3 text-sm text-teal-800 list-disc list-inside marker:text-teal-500">
-              <li><strong>Inyección SQL:</strong> Forzar el uso de Consultas Parametrizadas en todas las interacciones con el motor de base de datos relacional.</li>
-              <li><strong>XSS Reflejado:</strong> Sanitizar entradas, aplicar <em>Output Encoding</em> y configurar políticas CSP para proteger los tokens de fidelización.</li>
-              <li><strong>Inyección de Comandos:</strong> Validar entradas con listas blancas y usar APIs de red nativas en lugar de llamadas a la terminal del sstema operativo.</li>
+              <li>
+                <strong>Inyección SQL:</strong> Forzar el uso de Consultas Parametrizadas en todas las interacciones con el motor de base de datos relacional.
+                <span className="block mt-1 font-semibold text-teal-900/70 text-xs ml-5">(Riesgo Rojo - Nivel 9 | Marco: OWASP)</span>
+              </li>
+              <li>
+                <strong>XSS Reflejado:</strong> Sanitizar entradas, aplicar <em>Output Encoding</em> y configurar políticas CSP para proteger los tokens de fidelización.
+                <span className="block mt-1 font-semibold text-teal-900/70 text-xs ml-5">(Riesgo Naranja - Nivel 6 | Marco: OWASP)</span>
+              </li>
+              <li>
+                <strong>Inyección de Comandos:</strong> Validar entradas con listas blancas y usar APIs de red nativas en lugar de llamadas a la terminal del sstema operativo.
+                <span className="block mt-1 font-semibold text-teal-900/70 text-xs ml-5">(Riesgo Rojo - Nivel 9 | Marco: NIST)</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -46,6 +61,3 @@ function Controles() {
 }
 
 export default Controles
-
-
-
